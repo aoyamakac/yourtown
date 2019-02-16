@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Photos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @town.each do |town| %>
+      <tr>
+        <td><%= image_tag town.image.to_s %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to "新規作成", towns_new_path %>
