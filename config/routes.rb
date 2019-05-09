@@ -1,16 +1,16 @@
 Rails.application.routes.draw do
 
-  resources :photos
+
+
+  root 'towns#top'
+  get 'towns/new' => 'towns#new'
+  get 'towns/:region' => 'towns#index'
+  resources :towns, only:[ :create, :show, :index, :destroy]
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-get 'towns/index' => 'towns#index'
 
-get 'towns/new' => 'towns#new'
 
-post 'towns/new'=> 'towns#create'
-
-get 'towns/top' => 'towns#top'
-
-root 'towns#top'
 
 end

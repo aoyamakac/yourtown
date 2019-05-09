@@ -2,29 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+/*   towns/top   */
 .wrapper{
   margin-left:-40px;
   margin-right:-40px;
   margin-bottom:-40px;
   margin-top:-40px;
+  width:100vw;
+  height:100vh;
 }
 
 
 
 header{
   width:100%;
-  height: 00px;
+  height: 100px;
   background-color: black;
   margin-top:-100px;
 
 }
 /*   First block   */
 #first-block {
-  background-image: url("../picture/23k_blank");
+  background-image: url("../assets/towns1.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 550px;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -47,14 +50,25 @@ p{
  .subtitle{
    font-size: 60px
  }
+
+.explain{
+  font-size: 20px
+
+}
+
+
 /*   First block End   */
 
 /*   Second block   */
 #second-block {
   background-color: #f0f0f0;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+#map{
+
 }
 
 .about-container {
@@ -87,40 +101,15 @@ p{
 
 /*   Third block End   */
 #third-block {
-  background-color: #f05f40;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.event-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  width: 100%;
-}
-
-.events-title {
-  font-size: 60px;
-  font-family: serif;
-  color: #444;
-}
-
-.event {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  margin-top: 30px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.event-name {
-  font-size: 20px;
-  padding: 10px;
-  width: 40%;
+.right{
+  text-align: right;
+  padding-right: 25%;
+  font-size: 20px
 }
 
 span {
@@ -154,3 +143,16 @@ a {
 a:hover {
   color: #f00;
 }
+
+/*   towns/top end  */
+
+.contents{
+  margin-left:40px;
+  margin-right:40px;
+  margin-bottom:40px;
+  margin-top:40px;
+  font-size: 20px;
+  width:80vw;
+  height:80vh;
+}
+/*   towns/   */

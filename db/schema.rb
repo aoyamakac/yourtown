@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20190209095413) do
 
   create_table "towns", force: :cascade do |t|
     t.string "title"
+    t.string "comment"
     t.string "image"
     t.string "region"
     t.datetime "created_at", null: false
